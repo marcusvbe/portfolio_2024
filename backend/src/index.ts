@@ -5,11 +5,13 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:5173' // URL do frontend Vite
+}));
 app.use(express.json());
 
 // Rotas
-app.get('/', (req: Request, res: Response) => {
+app.get('/api/', (req: Request, res: Response) => {
   res.send('API Backend em TypeScript e Express');
 });
 
