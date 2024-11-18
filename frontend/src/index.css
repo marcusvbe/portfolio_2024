@@ -9,12 +9,22 @@
   --background-color: #ECF0F1;
   --text-color: #2C3E50;
   --font-family: 'Roboto', sans-serif;
+  --heading-font-family: 'Raleway', sans-serif;
+  --subheading-font-family: 'Wix Madefor Text', sans-serif;
+  --additional-font-family: 'IBM Plex Sans', sans-serif;
+  --ubuntu-font-family: 'Ubuntu', sans-serif;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap');
 
 * {
   box-sizing: border-box;
@@ -28,10 +38,9 @@ body {
   font-family: var(--font-family);
   line-height: 1.6;
   margin: 0;
-  min-width: 100vw; /* Alterado de 320px */
+  min-width: 100vw;
   min-height: 100vh;
   transition: background-color 0.3s, color 0.3s;
-
 }
 
 a {
@@ -44,16 +53,14 @@ a:hover {
   color: var(--accent-color);
 }
 
-/* Remover ou modificar
-#root {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-} */
-
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-family: var(--heading-font-family);
+}
+
+h2 {
+  font-family: var(--subheading-font-family);
 }
 
 button {
@@ -67,9 +74,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

@@ -25,10 +25,13 @@ const Home: React.FC = () => {
     }, []);
 
     return (
-        <div className="home-container text-center">
-            <h1 className="home-title">Seja bem-vindo!</h1>
-            <p className="home-subtitle">Portfólio de Marcus Betti</p>
+        <div className="home-container">
+            <h1 id="titulo-index">Seja bem-vindo!</h1>
+            <h2 id="subtitulo-index">Portfólio de Marcus Betti</h2>
             {message && <Alert variant="success">{message}</Alert>}
+            <div className="texto-index">Aluno do curso de Desenvolvimento de Software Multiplataforma</div>
+            <div className="texto-index">FATEC "Professor Jessen Vidal" – São José dos Campos – SP</div>
+            <div className="texto-index">4º Semestre</div>
         </div>
     );
 };
