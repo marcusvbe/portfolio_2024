@@ -1,0 +1,15 @@
+.home-container {
+    padding: 4rem 0;
+}
+
+.home-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.home-subtitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--secondary-color);
+}
