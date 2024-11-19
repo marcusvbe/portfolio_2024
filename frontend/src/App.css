@@ -127,3 +127,29 @@ footer p {
   margin: 0;
   font-weight: 500;
 }
+
+.custom-navbar {
+  background-color: var(--dark-bg) !important;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 8px var(--shadow-color);
+}
+
+.navbar-brand {
+  color: var(--accent-gold) !important;
+  font-family: var(--nav-font-family);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: var(--accent-gold) !important;
+  font-family: var(--nav-font-family);
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+  margin: 0 1rem;
+}
+
+.nav-link:hover {
+  color: var(--accent-yellow) !important;
+  transform: translateY(-2px);
+}

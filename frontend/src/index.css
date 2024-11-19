@@ -6,13 +6,23 @@
   --primary-color: #2C3E50;
   --secondary-color: #18BC9C;
   --accent-color: #E74C3C;
-  --background-color: #ECF0F1;
+  --background-color: #f8f8f8;
   --text-color: #2C3E50;
   --font-family: 'Roboto', sans-serif;
   --heading-font-family: 'Raleway', sans-serif;
   --subheading-font-family: 'Wix Madefor Text', sans-serif;
   --additional-font-family: 'IBM Plex Sans', sans-serif;
   --ubuntu-font-family: 'Ubuntu', sans-serif;
+
+  --primary-dark-green: #093426;
+  --primary-green: #0c5c42;
+  --accent-gold: #ecad10e8;
+  --accent-yellow: #FDEC00;
+  --dark-bg: #403F45;
+
+  --card-background: #ffffff;
+  --shadow-color: rgba(9, 52, 38, 0.1);
+  --hover-shadow: rgba(9, 52, 38, 0.2);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
