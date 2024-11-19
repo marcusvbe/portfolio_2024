@@ -13,12 +13,13 @@
     margin-bottom: 2rem;
 }
 
-.about-divider {
-    border: none;
+.about-title::after {
+    content: '';
+    display: block;
+    width: 100px;
     height: 4px;
     background-color: var(--accent-gold);
-    width: 100px;
-    margin: 0 auto 3rem;
+    margin: 1rem auto;
 }
 
 .about-content {

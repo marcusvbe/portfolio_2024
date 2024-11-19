@@ -7,36 +7,38 @@
 
 .container {
   max-width: 100%;
-  padding: 0 15px;
+  padding-top: 80px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.navbar {
-  background-color: var(--primary-color);
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
+.custom-navbar {
+  background-color: var(--dark-bg) !important;
+  padding: 1rem 2rem !important;
+  position: fixed !important;
   top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   z-index: 1000;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.navbar a {
-  color: #ffffff;
-  margin: 0 1rem;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-.navbar a:hover {
-  color: var(--secondary-color);
+  box-shadow: 0 2px 8px var(--shadow-color);
+  
+  display: flex; /* Garanta que Flexbox esteja ativado */
+  align-items: center; /* Alinhamento vertical */
+  justify-content: space-between; /* Espaço entre os itens */
 }
 
 .navbar-brand {
+  color: var(--accent-gold) !important;
+  font-family: var(--nav-font-family);
   font-size: 1.8rem;
-  font-weight: bold;
-  color: #ffffff;
+  font-weight: 700;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-brand:hover {
+  color: var(--accent-yellow) !important;
+  transform: translateY(-2px);
 }
 
 .menu {
@@ -80,6 +82,14 @@
   .menu {
       display: flex;
   }
+
+  .navbar-collapse {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+  }
 }
 
 .logo {
@@ -113,32 +123,19 @@
 }
 
 footer {
-  background-color: var(--primary-color);
-  color: #ffffff;
+  background-color: var(--dark-bg);
+  color: var(--accent-gold);
   text-align: center;
   padding: 1rem 0;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px var(--shadow-color);
+  margin-top: 2rem;
 }
 
 footer p {
   margin: 0;
   font-weight: 500;
-}
-
-.custom-navbar {
-  background-color: var(--dark-bg) !important;
-  padding: 1.5rem 2rem;
-  box-shadow: 0 2px 8px var(--shadow-color);
-}
-
-.navbar-brand {
-  color: var(--accent-gold) !important;
-  font-family: var(--nav-font-family);
-  font-size: 1.5rem;
-  font-weight: 700;
+  color: var(--accent-gold);
 }
 
 .nav-link {
@@ -152,4 +149,8 @@ footer p {
 .nav-link:hover {
   color: var(--accent-yellow) !important;
   transform: translateY(-2px);
+}
+
+.container-fluid {
+  padding-top: 60px;
 }

@@ -7,7 +7,7 @@ const About: React.FC = () => {
     return (
         <div className="about-container">
             <h2 className="about-title">Sobre Mim</h2>
-            <hr className="about-divider"/>
+            <hr/>
             <div className="about-content">
                 <div className="about-text">
                     <p>

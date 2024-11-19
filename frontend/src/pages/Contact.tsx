@@ -6,7 +6,7 @@ const Contact: React.FC = () => {
     return (
         <div className="contact-container">
             <h2 className="contact-title">Contato</h2>
-            <hr className="contact-divider"/>
+            <hr />
             
             <div className="contact-links">
                 <a 

@@ -8,7 +8,7 @@
     color: var(--primary-dark-green);
     font-size: 5rem;
     font-family: var(--heading-font-family);
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     animation: fadeInDown 1s ease;
 }
 

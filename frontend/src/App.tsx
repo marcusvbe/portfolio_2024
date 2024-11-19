@@ -11,13 +11,12 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar">
+      <Navbar variant="dark" expand="lg" className="custom-navbar" fixed="top">
         <Container>
           <Navbar.Brand as={Link} to="/">Portfólio</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-              {/* <Nav.Link as={Link} to="/">Início</Nav.Link> */}
               <Nav.Link as={Link} to="/projetos">Projetos</Nav.Link>
               <Nav.Link as={Link} to="/sobre">Sobre</Nav.Link>
               <Nav.Link as={Link} to="/contato">Contato</Nav.Link>
