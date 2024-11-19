@@ -34,11 +34,17 @@
   font-size: 1.8rem;
   font-weight: 700;
   transition: color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand:hover {
   color: var(--accent-yellow) !important;
   transform: translateY(-2px);
+}
+
+.navbar-brand svg {
+  /* Se desejar adicionar algum espaçamento ou estilização adicional, faça aqui */
 }
 
 .menu {
@@ -153,4 +159,19 @@ footer p {
 
 .container-fluid {
   padding-top: 60px;
+}
+
+.custom-navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.custom-navbar .navbar-brand span {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+}
+
+.custom-navbar .nav-link {
+  font-size: 1.2rem;
 }
