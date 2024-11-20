@@ -1,30 +1,8 @@
-import React, { useEffect, useState } from 'react';
-import { Alert } from 'react-bootstrap';
 import About from './About';
 import Contact from './Contact';
 import './Home.css';
 
 const Home: React.FC = () => {
-    const [message, setMessage] = useState<string>('');
-
-    useEffect(() => {
-        fetch('/api/', {
-            headers: {
-                'Accept': 'text/plain'
-            }
-        })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
-                }
-                return response.text();
-            })
-            .then(data => setMessage(data))
-            .catch(error => {
-                console.error('Erro ao buscar dados:', error);
-                setMessage('Erro ao carregar dados do servidor');
-            });
-    }, []);
 
     return (
         <div>
