@@ -1,0 +1,55 @@
+.site-footer {
+    background-color: var(--primary-dark-green); /* Opção 1: Fundo Escuro */
+    color: var(--accent-gold); /* Texto em Ouro */
+    padding: 2rem 1rem;
+    text-align: center;
+    font-family: var(--heading-font-family);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-links a {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-yellow);
+}
+
+/* Opção 2: Fundo Gradiente */
+.site-footer.gradient {
+    background: linear-gradient(135deg, var(--primary-dark-green) 0%, var(--primary-green) 100%);
+    color: var(--accent-gold);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 0 1rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}

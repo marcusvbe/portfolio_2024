@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
             
             <div className="contact-links">
                 <a 
-                    href="https://www.linkedin.com/in/marcus-betti/" 
+                    href="https://https://www.linkedin.com/in/marcus-betti-715b6614a/" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="contact-link"
