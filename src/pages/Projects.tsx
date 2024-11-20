@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
     {
       title: "Aplicativo Android de Gerenciamento de Senhas – Ago ‑ Dez 2024",
       // image: minhasSenhasApp,
-      image: logo_port,
+      image: desafio_proj,
       shortDescription: "Desenvolvimento de aplicativo Android para gerenciamento seguro de senhas com autenticação avançada.",
       detalhes: `Na disciplina de Programação para Dispositivos Móveis I, escolhemos o tema Gerenciamento de Senhas para o desenvolvimento de aplicativo
       Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. Autenticação de 2 fatores: login e biometria.`,
@@ -70,7 +70,7 @@ const Projects: React.FC = () => {
     {
       title: "Sistema de Coleta de Dados de Estações Meteorológicas – Ago ‑ Dez 2024",
       // image: API_4,
-      image: logo_port,
+      image: desafio_proj,
       shortDescription: "Desenvolvimento de sistema para coleta e monitoramento de dados meteorológicos em tempo real.",
       detalhes: `No projeto integrador em grupo (API) deste semestre (disciplinas de DevOps e IoT), desenvolvemos um sistema para coletar dados de
       sensores (direção e velocidade do vento, índice pluviométrico, umidade, temperatura e pressão), tratá‑los e exibi‑los em um portal com dashboards
@@ -82,7 +82,7 @@ const Projects: React.FC = () => {
     {
       title: "Sistema de Gestão de Ativos para Empresas – Fev ‑ Jul 2024",
       // image: API_3,
-      image: logo_port,
+      image: desafio_proj,
       shortDescription: "Desenvolvimento de sistema para gestão eficiente de ativos empresariais, tanto tangíveis quanto intangíveis.",
       detalhes: `No API do 3º semestre, nossa missão foi desenvolver um sistema para gestão de ativos, tangíveis e intangíveis.`,
       tecnologias: [faReact, faJava, faNodeJs, faHtml5, faCss3Alt, faGithub],
@@ -107,12 +107,13 @@ const Projects: React.FC = () => {
       <div className="projects-grid">
         {projects.map((project, index) => (
           <div key={index} className="project-card" onClick={() => handleShowModal(project)}>
-            <img src={project.image} alt={project.title} className="project-image" />
-            <h3>{project.title}</h3>
-            <p>{project.shortDescription}</p>
-            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faGithub} /> Ver no GitHub
-            </a>
+            <div className="project-image-container">
+              <img src={project.image} alt={project.title} className="project-image" />
+            </div>
+            <div className="project-content">
+              <h3>{project.title}</h3>
+              <p>{project.shortDescription}</p>
+            </div>
           </div>
         ))}
       </div>
@@ -136,7 +137,7 @@ const Projects: React.FC = () => {
               </div>
               <p><strong>Contribuições pessoais:</strong></p>
               <p>
-                {/* Você pode personalizar melhor esta parte para cada projeto, se necessário */}
+                {/* Personalize esta parte para cada projeto, se necessário */}
                 Desenvolvimento do front-end em React usando TypeScript, HTML e CSS.
               </p>
               {/* Adicione mais informações conforme necessário */}

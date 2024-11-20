@@ -28,9 +28,9 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="navbar-right">
-              <Nav.Link href="/#about">Sobre mim</Nav.Link>
-              <Nav.Link href="/#contact">Contato</Nav.Link>
-              <Nav.Link as={Link} to="/projetos">Projetos</Nav.Link>
+              <Nav.Link href="/#about">sobre mim</Nav.Link>
+              <Nav.Link href="/#contact">contato</Nav.Link>
+              <Nav.Link as={Link} to="/projetos">projetos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
