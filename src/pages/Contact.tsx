@@ -30,7 +30,7 @@ const Contact: React.FC = () => {
                 </a>
 
                 <a 
-                    href="mailto:marcus.betti@fatec.sp.gov.br"
+                    href="mailto:marcusbetti@gmail.com"
                     className="contact-link"
                 >
                     <FaEnvelope className="contact-icon" />
