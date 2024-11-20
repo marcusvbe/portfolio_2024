@@ -180,38 +180,29 @@ footer p {
 }
 
 .custom-navbar .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
-  gap: 2rem;
 }
 
 .navbar-brand {
-  grid-column: 1;
-  justify-self: end;
-  padding-right: 2rem;
+  margin-right: auto;
 }
 
 .navbar-right {
-  grid-column: 2;
-  justify-self: start;
-  padding-left: 2rem;
+  display: flex;
+  gap: 2rem;
+  margin-left: auto;
 }
 
 /* Ajuste para mobile */
 @media (max-width: 768px) {
-  .custom-navbar .container {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  
-  .navbar-brand,
   .navbar-right {
-    grid-column: 1;
-    justify-self: center;
-    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
   }
 }
