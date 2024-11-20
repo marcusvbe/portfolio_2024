@@ -1,8 +1,56 @@
+.contact-section {
+  position: relative;
+  padding: 6rem 0;
+  background: linear-gradient(135deg, 
+    rgba(236, 173, 16, 0.08) 0%, 
+    rgba(253, 236, 0, 0.12) 100%
+  );
+  overflow: hidden;
+}
+
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at 50% 50%, 
+    rgba(9, 52, 38, 0.08) 0%, 
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+.contact-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.05) 25%,
+    transparent 25%,
+    transparent 75%,
+    rgba(255, 255, 255, 0.05) 75%
+  );
+  background-size: 60px 60px;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
 .contact-container {
-    padding: 4rem 0;
-    max-width: 1200px;
-    margin: 0 auto;
-    animation: fadeIn 1s ease;
+  position: relative;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
 }
 
 .contact-title {

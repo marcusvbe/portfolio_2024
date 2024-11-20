@@ -20,14 +20,14 @@ function App() {
   return (
     <Router>
       <Navbar variant="dark" expand="lg" className="custom-navbar" fixed="top">
-        <Container>
-          <Navbar.Brand as={Link} to="/" className="d-flex align-items-center">
+        <Container className="navbar-container">
+          <Navbar.Brand as={Link} to="/" className="d-flex align-items-center navbar-left">
             <GiLaptop size={35} />
-            <span className="ms-2">Meu Portfólio</span>
+            <span className="ms-2">Portfólio</span>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="ms-auto">
+            <Nav className="navbar-right">
               <Nav.Link as={Link} to="/projetos">Projetos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
