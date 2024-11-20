@@ -52,7 +52,7 @@ const Projects: React.FC = () => {
       softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
       tecnologias: [faReact, faNodeJs, faFigma, faJs, faHtml5, faCss3Alt],
       githubLink: "https://github.com/minhasSenhasApp2024/minhasSenhasApp",
-    },,
+    },
     {
       title: "Sistema de Coleta de Dados de Estações Meteorológicas – Ago ‑ Dez 2024",
       // image: API_4,
