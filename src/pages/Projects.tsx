@@ -11,8 +11,8 @@ import desafio_proj from '../assets/desafio_proj.png';
 // import minhasSenhasApp from '../assets/minhasSenhasApp.png';
 // import API_4 from '../assets/API_4.png';
 // import API_3 from '../assets/API_3.png';
-import logo_port from '../assets/logo_port.jpg';
-import { FaPython } from 'react-icons/fa';
+// import logo_port from '../assets/logo_port.jpg';
+// import { FaPython } from 'react-icons/fa';
 // Adicione mais imports de imagens conforme necessário
 
 interface Project {
