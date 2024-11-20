@@ -132,7 +132,12 @@ const Projects: React.FC = () => {
       </div>
 
       {/* Modal para Detalhes do Projeto */}
-      <Modal show={showModal} onHide={handleCloseModal}>
+      <Modal 
+        show={showModal} 
+        onHide={handleCloseModal} 
+        className="custom-modal"
+        centered
+      >
         <Modal.Header closeButton>
           <Modal.Title>Detalhes do Projeto</Modal.Title>
         </Modal.Header>
