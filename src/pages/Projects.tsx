@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faReact, faNodeJs, faPython, faFigma, faTrello, faJs, faHtml5, faCss3Alt, faJava, faJira, faSlack } from '@fortawesome/free-brands-svg-icons';
 import { Modal, Button } from 'react-bootstrap';
 
 // Importar as imagens dos projetos
@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
       detalhes: `Projeto Integrado do 1º semestre do curso de Desenvolvimento de Software Multiplataforma da FATEC de São José dos Campos – SP.
       O site permite analisar e comparar alguns dados de saúde do sistema Datasus (Tabnet) a fim de identificar possíveis impactos da Covid longa
       em 3 cidades do Vale do Paraíba: São José dos Campos, Jacareí e Taubaté.`,
-      tecnologias: [], // Adicione os ícones das tecnologias utilizadas
+      tecnologias: [faReact, faNodeJs, faGithub, faFigma, faTrello, faJs, faHtml5, faCss3Alt, faJava, faJira, faSlack],
       githubLink: "https://github.com/marcusvbe/api-primeiro-semestre",
     },
     {
@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
       shortDescription: "Desenvolvido na disciplina de Desenvolvimento Web, ministrada pelo professor Jean Costa.",
       detalhes: `Desenvolvido na disciplina de Desenvolvimento Web, ministrada pelo professor Jean Costa no 1º semestre do curso de Desenvolvimento de Software
       Multiplataforma, este site simples foi recebendo recursos ao longo do semestre: Flask, MySQL, Docker Compose e responsividade.`,
-      tecnologias: [], // Adicione os ícones das tecnologias utilizadas
+      tecnologias: [faReact, faNodeJs, faPython, faHtml5, faCss3Alt],
       githubLink: "https://github.com/marcusvbe/Site-Dev-Web-1.-semestre",
     },
     // Adicione mais projetos conforme necessário
@@ -65,6 +65,9 @@ const Projects: React.FC = () => {
             <img src={project.image} alt={project.title} className="project-image" />
             <h3>{project.title}</h3>
             <p>{project.shortDescription}</p>
+            <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} /> Ver no GitHub
+            </a>
           </div>
         ))}
       </div>
@@ -83,7 +86,11 @@ const Projects: React.FC = () => {
               <p><strong>Tecnologias utilizadas:</strong></p>
               <div className="tecnologias">
                 {selectedProject.tecnologias.map((icon, idx) => (
-                  <FontAwesomeIcon key={idx} icon={icon} style={{ fontSize: '24px', marginRight: '10px' }} />
+                  typeof icon === 'object' ? (
+                    <FontAwesomeIcon key={idx} icon={icon} style={{ fontSize: '24px', marginRight: '10px' }} />
+                  ) : (
+                    <FontAwesomeIcon key={idx} icon={faReact} style={{ fontSize: '24px', marginRight: '10px' }} /> // Ajuste conforme necessário
+                  )
                 ))}
               </div>
               <p><strong>Contribuições pessoais:</strong></p>
