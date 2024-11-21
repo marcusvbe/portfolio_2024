@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faReact, faNodeJs, faPython, faFigma, faJs, faHtml5, faCss3Alt, faJava, faJira, faSlack } from '@fortawesome/free-brands-svg-icons';
+// import { faGithub, faReact, faNodeJs, faPython, faFigma, faJs, faHtml5, faCss3Alt, faJava, faJira, faSlack } from '@fortawesome/free-brands-svg-icons';
 import { Modal, Button } from 'react-bootstrap';
 
 // Importar as imagens dos projetos
 import api_Chamados from '../assets/api_Chamados.png';
 import COVID_proj from '../assets/COVID_proj.png';
 import desafio_proj from '../assets/desafio_proj.png';
-// import minhasSenhasApp from '../assets/minhasSenhasApp.png';
+import minhasSenhasApp from '../assets/screenshotMinhasSenhas2.png';
+
 // import API_4 from '../assets/API_4.png';
 // import API_3 from '../assets/API_3.png';
 // import logo_port from '../assets/logo_port.jpg';
@@ -22,7 +23,8 @@ interface Project {
   detalhes: string;
   hardSkills: string[];
   softSkills: string[];
-  tecnologias: any[]; // Substitua 'any' pelo tipo adequado se possível
+  contribuicoes: string[];
+  tecnologias: string[]; 
   githubLink: string;
 }
 
@@ -43,14 +45,23 @@ const Projects: React.FC = () => {
   const projects: Project[] = [
     {
       title: "Aplicativo Android de Gerenciamento de Senhas – Ago ‑ Dez 2024",
-      // image: minhasSenhasApp,
-      image: desafio_proj,
+      image: minhasSenhasApp,
       shortDescription: "Desenvolvimento de aplicativo Android para gerenciamento seguro de senhas com autenticação avançada.",
       detalhes: `Na disciplina de Programação para Dispositivos Móveis I, escolhemos o tema Gerenciamento de Senhas para o desenvolvimento de aplicativo
-      Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. Autenticação de 2 fatores: login e biometria.`,
-      hardSkills: ["Java", "Android SDK", "SQLite", "Criptografia", "Autenticação Biométrica"],
+Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. Autenticação de 2 fatores: login e biometria.`,
+      hardSkills: [
+        "Typescript e Node.js em todo o projeto",
+        "Framework Expo",
+        "expo secure store: armazenamento seguro das credenciais do usuário e chave mestra no dispositivo",
+        "Firebase: autenticação do usuário com e‑mail e senha",
+        "Firestore para armazenamento NoSQL dos dados criptografados dos usuários",
+        "criptografia AES‑256 com chave mestra"
+      ],
       softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
-      tecnologias: [faReact, faNodeJs, faFigma, faJs, faHtml5, faCss3Alt],
+      contribuicoes: ["Desenvolvi toda a estrutura do projeto, configurei o Firebase, Firestore e todos os seus serviços e sua integração ao código, toda a lógica de funcionamento do app, estrutura de navegação, autenticação e criptografia."],
+      tecnologias: [
+        "Typescript, React Native, Expo, Node.js, Firebase, Firestore."
+      ],
       githubLink: "https://github.com/minhasSenhasApp2024/minhasSenhasApp",
     },
     {
@@ -64,7 +75,10 @@ const Projects: React.FC = () => {
       naturais. Recurso didático: a demonstração dos conceitos matemáticos usados nos cálculos dos parâmetros.`,
       hardSkills: ["Java", "Node.js", "HTML", "CSS", "GitHub"],
       softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
-      tecnologias: [faReact, faNodeJs, faPython, faHtml5, faCss3Alt, faJava, faJira],
+      contribuicoes: [
+        ""
+      ],
+      tecnologias: [""],
       githubLink: "https://github.com/equipe-javali/API_4",
     },
     {
@@ -75,7 +89,8 @@ const Projects: React.FC = () => {
       detalhes: `No API do 3º semestre, nossa missão foi desenvolver um sistema para gestão de ativos, tangíveis e intangíveis.`,
       hardSkills: ["Java", "Node.js", "HTML", "CSS", "GitHub"],
       softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
-      tecnologias: [faReact, faJava, faNodeJs, faHtml5, faCss3Alt, faGithub],
+      contribuicoes: [""],
+      tecnologias: [""],
       githubLink: "https://github.com/equipe-javali/API_3",
     },
     {
@@ -88,7 +103,8 @@ const Projects: React.FC = () => {
       Também fiz integrações com o front-end.`,
       hardSkills: ["Java", "Node.js", "Python", "HTML", "CSS", "JavaScript", "Jira", "Slack"],
       softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
-      tecnologias: [faReact, faNodeJs, faPython, faHtml5, faCss3Alt, faJs, faJira, faSlack],
+      contribuicoes: [""],
+      tecnologias: [""],
       githubLink: "https://github.com/marcusvbe/FocusQuestAPI",
     },
     {
@@ -98,8 +114,8 @@ const Projects: React.FC = () => {
       detalhes: `API (Aprendizagem por Projeto Integrado) do 1º semestre do curso de Desenvolvimento de Software Multiplataforma da FATEC de São José dos Campos – SP, em parceria com a TV Vanguarda. O site permite analisar e comparar alguns dados de saúde do sistema Datasus (Tabnet) a fim de identificar possíveis impactos da Covid longa em 3 cidades do Vale do Paraíba: São José dos Campos, Jacareí e Taubaté.`,
       hardSkills: ["Java", "Node.js", "Python", "HTML", "CSS", "JavaScript", "Jira", "Slack"],
       softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
-      // tecnologias: [faReact, faNodeJs, faGithub, faFigma, faTrello, faJs, faHtml5, faCss3Alt, faJava, faJira, faSlack],
-      tecnologias: [faGithub, faFigma, faJs, faHtml5, faCss3Alt, faPython],
+      contribuicoes: [""],
+      tecnologias: [""],
       githubLink: "https://github.com/marcusvbe/api-primeiro-semestre",
     },
     {
@@ -109,7 +125,8 @@ const Projects: React.FC = () => {
       detalhes: `Desenvolvido na disciplina de Desenvolvimento Web, ministrada pelo professor Jean Costa no 1º semestre do curso de Desenvolvimento de Software Multiplataforma, este site simples foi recebendo recursos ao longo do semestre: Flask, MySQL, Docker Compose e responsividade.`,
       hardSkills: ["Java", "Node.js", "Python", "HTML", "CSS", "JavaScript", "Jira", "Slack"],
       softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
-      tecnologias: [faReact, faNodeJs, faPython, faHtml5, faCss3Alt],
+      contribuicoes: [""],
+      tecnologias: [""],
       githubLink: "https://github.com/marcusvbe/Site-Dev-Web-1.-semestre",
     },
   ];
@@ -166,18 +183,20 @@ const Projects: React.FC = () => {
                   </ul>
                 </div>
               </div>
-
+  
               {/* Seção de Contribuições Pessoais */}
               <p><strong>Contribuições pessoais:</strong></p>
               <p>
-                Desenvolvimento do front-end em React usando TypeScript, HTML e CSS.
+                {selectedProject.contribuicoes.map((contribuicao, idx) => (
+                  <p key={idx}>{contribuicao}</p>
+                ))}
               </p>
 
               {/* Seção de Tecnologias Utilizadas */}
               <p><strong>Tecnologias utilizadas:</strong></p>
               <div className="tecnologias">
-                {selectedProject.tecnologias.map((icon, idx) => (
-                  <FontAwesomeIcon key={idx} icon={icon} style={{ fontSize: '24px', marginRight: '10px' }} />
+                {selectedProject.tecnologias.map((tech, idx) => (
+                  <p key={idx}>{tech}</p>
                 ))}
               </div>
             </>
