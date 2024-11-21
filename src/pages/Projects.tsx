@@ -18,6 +18,7 @@ import minhasSenhasApp from '../assets/screenshotMinhasSenhas2.png';
 
 interface Project {
   title: string;
+  modalTitle: string;
   image: string;
   shortDescription: string;
   detalhes: string;
@@ -44,9 +45,10 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
-      title: "Minhas Senhas",
+      title: "Aplicativo Minhas Senhas",
+      modalTitle: "Minhas Senhas",
       image: minhasSenhasApp,
-      shortDescription: "Aplicativo de gerenciamento de senhas com biometria e criptografia de ponta a ponta – Ago ‑ Dez 2024.",
+      shortDescription: "Aplicativo de gerenciamento de senhas com biometria e criptografia de ponta a ponta – 2º semestre de 2024",
       detalhes: `Na disciplina de Programação para Dispositivos Móveis I, escolhemos o tema Gerenciamento de Senhas para o desenvolvimento de aplicativo
 Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. Autenticação de 2 fatores: login e biometria.`,
       hardSkills: [
@@ -66,6 +68,7 @@ Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. A
     },
     {
       title: "Sistema de Coleta de Dados de Estações Meteorológicas – Ago ‑ Dez 2024",
+      modalTitle: "Coleta de Dados Meteorológicos",
       // image: API_4,
       image: desafio_proj,
       shortDescription: "Desenvolvimento de sistema para coleta e monitoramento de dados meteorológicos em tempo real.",
@@ -82,7 +85,8 @@ Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. A
       githubLink: "https://github.com/equipe-javali/API_4",
     },
     {
-      title: "Sistema de Gestão de Ativos para Empresas – Fev ‑ Jul 2024",
+      title: "Sistema de Gestão de Ativos para Empresas – 3º semestre de 2024",
+      modalTitle: "Gestão de Ativos",
       // image: API_3,
       image: desafio_proj,
       shortDescription: "Desenvolvimento de sistema para gestão eficiente de ativos empresariais, tanto tangíveis quanto intangíveis.",
@@ -94,13 +98,14 @@ Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. A
       githubLink: "https://github.com/equipe-javali/API_3",
     },
     {
-      title: "Sistema de Gestão de Chamados (API) 02/2023",
+      title: "Sistema de Gestão de Chamados (API) – 2º semestre de 2023",
+      modalTitle: "Gestão de Chamados",
       image: api_Chamados,
       shortDescription: "Desenvolvimento de API para gestão de chamados direcionada a instituições de ensino.",
       detalhes: `O projeto integrado do 2º semestre de 2023 consistiu na criação de uma aplicação de gestão de chamados direcionada a escolas e instituições
-      de ensino. Minha participação esteve mais concentrada no back-end, desenvolvendo a API, que incluiu a criação de rotas, operações de CRUD,
+      de ensino. Minha participação esteve mais concentrada no backend, desenvolvendo a API, que incluiu a criação de rotas, operações de CRUD,
       e a lógica de funcionamento do sistema, como as mudanças de status do chamado refletindo ações do cliente, do técnico e do admin.
-      Também fiz integrações com o front-end.`,
+      Também fiz integrações com o frontend.`,
       hardSkills: ["Java", "Node.js", "Python", "HTML", "CSS", "JavaScript", "Jira", "Slack"],
       softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
       contribuicoes: [""],
@@ -108,21 +113,23 @@ Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. A
       githubLink: "https://github.com/marcusvbe/FocusQuestAPI",
     },
     {
-      title: "API 1º Semestre – Covid Longa – 01/2023",
+      title: "Dados da Covid – API 1º Semestre",
+      shortDescription: "Projeto Integrado do curso de Desenvolvimento de Software Multiplataforma da FATEC de São José dos Campos – SP – 1º semestre de 2023",
+      modalTitle: "API Covid Longa",
       image: COVID_proj,
-      shortDescription: "Projeto Integrado do 1º semestre do curso de Desenvolvimento de Software Multiplataforma da FATEC de São José dos Campos – SP.",
       detalhes: `API (Aprendizagem por Projeto Integrado) do 1º semestre do curso de Desenvolvimento de Software Multiplataforma da FATEC de São José dos Campos – SP, em parceria com a TV Vanguarda. O site permite analisar e comparar alguns dados de saúde do sistema Datasus (Tabnet) a fim de identificar possíveis impactos da Covid longa em 3 cidades do Vale do Paraíba: São José dos Campos, Jacareí e Taubaté.`,
-      hardSkills: ["Java", "Node.js", "Python", "HTML", "CSS", "JavaScript", "Jira", "Slack"],
-      softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
-      contribuicoes: [""],
-      tecnologias: [""],
+      hardSkills: ["Figma: wireframe", "GitHub: controle de versão", "Python, Flask: backend", "MySQL: banco de dados", "HTML, CSS, Bootstrap: frontend"],
+      softSkills: ["Trabalhar em equipe", "Gerenciar o tempo", "Falar em público nas apresentações das sprints do projeto"],
+      contribuicoes: ["Usei o Figma para criação de páginas do wireframe do projeto. Redigi parte do README do projeto no GitHub. Contribuí com a implementação do site com Flask. Redigi textos do site."],
+      tecnologias: ["Python", "Flask", "MySQL", "HTML", "CSS", "Bootstrap", "GitHub"],
       githubLink: "https://github.com/marcusvbe/api-primeiro-semestre",
     },
     {
       title: "Site UNES",
+      modalTitle: "Site UNES",
       image: desafio_proj,
-      shortDescription: "Desenvolvido na disciplina de Desenvolvimento Web I.",
-      detalhes: `Site de uma universidade fictícia criado no 1º semestre do curso de Desenvolvimento de Software Multiplataforma.`,
+      shortDescription: "Site criado para pôr em prática estudos de desenvolvimento web frontend e backend – 1º semestre de 2023.",
+      detalhes: `Site de uma universidade fictícia criado no 1º semestre do curso de Desenvolvimento de Software Multiplataforma, para a disciplina de Desenvolvimento Web I.`,
       hardSkills: ["Python, framework Flask: backend", "HTML, CSS: frontend", "Docker Compose: orquestração dos ambientes de backend e banco de dados"],
       softSkills: ["Gerenciamento de Tempo", "Resolução de Problemas", "Autonomia"],
       contribuicoes: ["Primeiro site que desenvolvi, conforme o wireframe fornecido pelo professor. Projeto individual."],
@@ -161,7 +168,7 @@ Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. A
         <Modal.Body>
           {selectedProject && (
             <>
-              <h4>{selectedProject.title}</h4>
+              <h4>{selectedProject.modalTitle}</h4>
               <p>{selectedProject.detalhes}</p>
 
               {/* Seção de Hard Skills e Soft Skills */}
