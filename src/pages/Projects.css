@@ -87,16 +87,15 @@
 .project-card h3 {
     color: var(--primary-dark-green);
     font-size: 1.1rem;
-    /* margin: 0.2rem; */
     font-family: var(--heading-font-family);
     text-align: center;
+    font-weight: bold;
 }
 
 .project-card p {
     color: var(--text-color);
     font-size: 1rem;
     line-height: 1.2;
-    /* margin: 0.5rem 1rem 1.5rem 1rem; */
     text-align: center;
 }
 
@@ -182,6 +181,7 @@
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     font-family: var(--heading-font-family);
+    font-weight: bold;
 }
 
 .project-content h4 {
@@ -255,9 +255,6 @@
 }
 
 .custom-modal .modal-content {
-    background-color: #ffffff; /* Fundo branco para consistência com os cartões de projetos */
-    color: var(--text-color);
-    border: none;
     border-radius: 10px;
     font-family: var(--heading-font-family);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -377,4 +374,35 @@
     .custom-modal .skills-section {
         flex-direction: column;
     }
+}
+
+.custom-modal .tecnologias p {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.custom-modal .contribuicoes {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+/* Estilos para os títulos das seções */
+.section-title {
+    color: var(--primary-dark-green);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
+}
+
+/* Consolidando as regras para project-card h3 e project-content h3 */
+.project-card h3,
+.project-content h3 {
+    color: var(--primary-dark-green);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--heading-font-family);
+    font-weight: bold;
 }

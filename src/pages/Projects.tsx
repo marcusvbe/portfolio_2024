@@ -44,9 +44,9 @@ const Projects: React.FC = () => {
 
   const projects: Project[] = [
     {
-      title: "Aplicativo Android de Gerenciamento de Senhas – Ago ‑ Dez 2024",
+      title: "Minhas Senhas",
       image: minhasSenhasApp,
-      shortDescription: "Desenvolvimento de aplicativo Android para gerenciamento seguro de senhas com autenticação avançada.",
+      shortDescription: "Aplicativo de gerenciamento de senhas com biometria e criptografia de ponta a ponta – Ago ‑ Dez 2024.",
       detalhes: `Na disciplina de Programação para Dispositivos Móveis I, escolhemos o tema Gerenciamento de Senhas para o desenvolvimento de aplicativo
 Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. Autenticação de 2 fatores: login e biometria.`,
       hardSkills: [
@@ -119,14 +119,14 @@ Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. A
       githubLink: "https://github.com/marcusvbe/api-primeiro-semestre",
     },
     {
-      title: "Desafio UNES – Desenvolvimento Web",
+      title: "Site UNES",
       image: desafio_proj,
-      shortDescription: "Desenvolvido na disciplina de Desenvolvimento Web, ministrada pelo professor Jean Costa.",
-      detalhes: `Desenvolvido na disciplina de Desenvolvimento Web, ministrada pelo professor Jean Costa no 1º semestre do curso de Desenvolvimento de Software Multiplataforma, este site simples foi recebendo recursos ao longo do semestre: Flask, MySQL, Docker Compose e responsividade.`,
-      hardSkills: ["Java", "Node.js", "Python", "HTML", "CSS", "JavaScript", "Jira", "Slack"],
-      softSkills: ["Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
-      contribuicoes: [""],
-      tecnologias: [""],
+      shortDescription: "Desenvolvido na disciplina de Desenvolvimento Web I.",
+      detalhes: `Site de uma universidade fictícia criado no 1º semestre do curso de Desenvolvimento de Software Multiplataforma.`,
+      hardSkills: ["Python, framework Flask: backend", "HTML, CSS: frontend", "Docker Compose: orquestração dos ambientes de backend e banco de dados"],
+      softSkills: ["Gerenciamento de Tempo", "Resolução de Problemas", "Autonomia"],
+      contribuicoes: ["Primeiro site que desenvolvi, conforme o wireframe fornecido pelo professor. Projeto individual."],
+      tecnologias: ["HTML, CSS, Python, Flask, MySQL, Docker Compose"],
       githubLink: "https://github.com/marcusvbe/Site-Dev-Web-1.-semestre",
     },
   ];
@@ -167,7 +167,7 @@ Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. A
               {/* Seção de Hard Skills e Soft Skills */}
               <div className="skills-section">
                 <div className="hard-skills">
-                  <h5>Hard Skills</h5>
+                  <h5 className="section-title">Hard Skills</h5>
                   <ul>
                     {selectedProject.hardSkills.map((skill, idx) => (
                       <li key={idx}>{skill}</li>
@@ -175,7 +175,7 @@ Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. A
                   </ul>
                 </div>
                 <div className="soft-skills">
-                  <h5>Soft Skills</h5>
+                  <h5 className="section-title">Soft Skills</h5>
                   <ul>
                     {selectedProject.softSkills.map((skill, idx) => (
                       <li key={idx}>{skill}</li>
@@ -185,15 +185,15 @@ Android em dupla. Criptografia de ponta a ponta de todos os dados do usuário. A
               </div>
   
               {/* Seção de Contribuições Pessoais */}
-              <p><strong>Contribuições pessoais:</strong></p>
-              <p>
+              <h5 className="section-title">Contribuições pessoais:</h5>
+              <p className="contribuicoes">
                 {selectedProject.contribuicoes.map((contribuicao, idx) => (
-                  <p key={idx}>{contribuicao}</p>
+                  <span key={idx}>{contribuicao}</span>
                 ))}
               </p>
 
               {/* Seção de Tecnologias Utilizadas */}
-              <p><strong>Tecnologias utilizadas:</strong></p>
+              <h5 className="section-title">Tecnologias utilizadas:</h5>
               <div className="tecnologias">
                 {selectedProject.tecnologias.map((tech, idx) => (
                   <p key={idx}>{tech}</p>
