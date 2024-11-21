@@ -250,7 +250,7 @@
 
 /* Classe personalizada para o Modal */
 .custom-modal .modal-dialog {
-    max-width: 750px; /* Aumenta a largura do modal */
+    max-width: 975px; /* Aumenta a largura do modal em 30% */
     width: 100%;
 }
 
@@ -405,4 +405,13 @@
     margin-bottom: 0.5rem;
     font-family: var(--heading-font-family);
     font-weight: bold;
+}
+
+.project-details {
+    text-align: justify;
+    white-space: pre-line;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    color: var(--text-color);
 }
