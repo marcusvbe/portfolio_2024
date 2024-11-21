@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Projects.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faGithub, faReact, faNodeJs, faPython, faFigma, faJs, faHtml5, faCss3Alt, faJava, faJira, faSlack } from '@fortawesome/free-brands-svg-icons';
 import { Modal, Button } from 'react-bootstrap';
 
