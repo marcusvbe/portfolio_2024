@@ -31,6 +31,8 @@
   --shadow-color: rgba(9, 52, 38, 0.1);
   --hover-shadow: rgba(9, 52, 38, 0.2);
 
+  --hover-gray: #b3b3b3;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

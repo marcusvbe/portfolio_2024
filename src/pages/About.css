@@ -34,6 +34,41 @@
   margin-bottom: 1.5rem; 
   font-size: 1.2rem;
   line-height: 1.8;
+  white-space: pre-line;
+  text-align: justify;
+}
+
+/* Estilização do Link para Projetos */
+.projects-link {
+  display: flex; /* Alinha o ícone e o texto horizontalmente */
+  align-items: center; /* Centraliza verticalmente os itens */
+  gap: 1rem; /* Espaço entre o ícone e o texto */
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: var(--card-background);
+  box-shadow: 0 2px 4px var(--shadow-color);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--primary-green);
+  max-width: 300px; /* Limita a largura para melhor estética */
+  margin-top: 1.5rem;
+}
+
+.projects-link:hover {
+  transform: translateX(10px);
+  background-color: var(--hover-gray); /* Usa a variável definida */
+  color: var(--primary-green);
+}
+
+.projects-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Centralização opcional */
+.projects-link-container {
+  display: flex;
+  justify-content: center;
 }
 
 .about-image-container {
@@ -71,5 +106,12 @@
     width: 100%;
     max-width: 300px;
     margin: 0 auto;
+  }
+
+  /* Ajuste do tamanho do link em telas menores */
+  .projects-link {
+    font-size: 1.3rem;
+    padding: 0.8rem 1.2rem;
+    max-width: 100%;
   }
 }

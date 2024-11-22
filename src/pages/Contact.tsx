@@ -40,8 +40,7 @@ const Contact: React.FC = () => {
 
             <div className="contact-additional">
                 <p className="contact-description">
-                    Fique à vontade para entrar em contato através de qualquer um dos canais acima. 
-                    Estou sempre interessado em novas oportunidades e conexões profissionais.
+                    Estou sempre interessado em novas oportunidades e conexões profissionais. Será um prazer receber sua mensagem!
                 </p>
             </div>
         </div>
