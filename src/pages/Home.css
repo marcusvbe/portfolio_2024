@@ -74,13 +74,32 @@
 }
 
 .texto-index {
-  color: var(--primary-dark-green);
-  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
-  font-size: 1.4rem;
-  line-height: 1.6;
-  margin-bottom: 1rem;
-  font-family: var(--body-font-family);
-  animation: fadeIn 1s ease;
+  font-family: var(--heading-font-family);
+  font-size: 2rem;
+  color: var(--accent-gold);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin: 0.5rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  letter-spacing: 0.3px;
+  transition: color 0.3s ease;
+}
+
+.texto-index:first-of-type {
+  animation-delay: 0.6s;
+  font-weight: 700;
+  color: #ffb700;
+}
+
+.texto-index:last-of-type {
+  animation-delay: 0.9s;
+  font-style: italic;
+  color: #ffb700;
+}
+
+.texto-index:hover {
+  color: #ffc400;
 }
 
 @keyframes fadeInDown {

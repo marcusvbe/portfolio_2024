@@ -1,7 +1,8 @@
 .site-footer {
     background-color: var(--primary-dark-green); /* Opção 1: Fundo Escuro */
     color: var(--accent-gold); /* Texto em Ouro */
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
+    margin-top: 0;
     text-align: center;
     font-family: var(--heading-font-family);
 }
