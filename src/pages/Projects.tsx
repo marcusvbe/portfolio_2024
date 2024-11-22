@@ -5,17 +5,13 @@ import './Projects.css';
 import { Modal, Button } from 'react-bootstrap';
 
 // Importar as imagens dos projetos
-import api_Chamados from '../assets/api_Chamados.png';
-import COVID_proj from '../assets/COVID_proj.png';
+import api_Chamados from '../assets/api_Chamados2.png';
+import COVID_proj from '../assets/COVID_proj2.png';
 import desafio_proj from '../assets/desafio_proj2.png';
 import minhasSenhasApp from '../assets/screenshotMinhasSenhas3.png';
 
-// import API_4 from '../assets/API_4.png';
-// import API_3 from '../assets/API_3.png';
-// import logo_port from '../assets/logo_port.jpg';
-// import { FaPython } from 'react-icons/fa';
-// Adicione mais imports de imagens conforme necessário
-
+import API_4 from '../assets/API_42.png';
+import API_3 from '../assets/ctrl-A.png';
 
 
 interface Project {
@@ -68,9 +64,9 @@ const Projects: React.FC = () => {
       title: "Sistema de Coleta de Dados de Estações Meteorológicas – Tecsus (empresa parceira) – API 4º semestre",
       shortDescription: "Sistema para coleta e monitoramento de dados meteorológicos em tempo real – 2º semestre de 2024",
       modalTitle: "Sistema de Coleta de Dados de Estações Meteorológicas",
-      // image: API_4,
-      image: desafio_proj,
+      image: API_4,
       detalhes: `Os APIs (Aprendizagem por Projeto Integrado) são projetos semestrais em grupo desenvolvidos com a metodologia ágil SCRUM. A cada API são fornecidos requisitos funcionais e não funcionais, cabendo ao grupo a priorização (MVP), definição das entregas a cada sprint, sua validação com o cliente e a gestão da documentação.
+
 
       No API deste semestre (disciplinas de DevOps e IoT), desenvolvemos um sistema para coletar dados de sensores (direção e velocidade do vento, índice pluviométrico, umidade, temperatura e pressão), tratá‑los e exibi‑los em um portal com dashboards e relatórios. 
       Geração de alertas: ferramenta de monitoramento ambiental para lidar com desastres naturais. 
@@ -86,8 +82,7 @@ const Projects: React.FC = () => {
       title: "Sistema de Gestão de Ativos para Empresas – Yutan (empresa parceira) – API 3º semestre",
       shortDescription: "Sistema para gestão eficiente de ativos empresariais, tangíveis e intangíveis – 1º semestre de 2024",
       modalTitle: "Sistema de Gestão de Ativos para Empresas",
-      // image: API_3,
-      image: desafio_proj,
+      image: API_3,
       detalhes: `Criação de uma aplicação web para o monitoramento dos ativos (tangíveis e intangíveis) de uma empresa, com informações sobre o valor atual do ativo, onde ele está no momento, seu responsável, manutenções, entre outros`,
       hardSkills: ["Java, framework Spring: backend", "React e Typescript: frontend", "PostgreSQL: banco de dados relacional", "Supabase: banco de dados relacional on‑line", "Jira: gestão de tarefas", "Metodologia Ágil SCRUM: gestão do projeto"],
       softSkills: ["Aprimoramento de processo: seguir um padrão na criação de branches e commits no Github", "Trabalho em Equipe", "Gerenciamento de Tempo", "Resolução de Problemas"],
