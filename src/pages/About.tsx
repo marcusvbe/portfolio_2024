@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import ImageLoader from '../components/ImageLoader';
-import fotoProfissional from '../assets/foto_profissional.jpg';
+import fotoProfissional from '../assets/foto_marcus.png';
 import { HashLink } from 'react-router-hash-link';
 import { FaProjectDiagram } from 'react-icons/fa';
 
