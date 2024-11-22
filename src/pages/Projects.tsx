@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Projects.css';
+import { Modal, Button } from 'react-bootstrap';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faGithub, faReact, faNodeJs, faPython, faFigma, faJs, faHtml5, faCss3Alt, faJava, faJira, faSlack } from '@fortawesome/free-brands-svg-icons';
-import { Modal, Button } from 'react-bootstrap';
 
 // Importar as imagens dos projetos
 import api_Chamados from '../assets/api_Chamados2.png';
@@ -29,6 +29,10 @@ interface Project {
 const Projects: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
+  useEffect(() => {
+    // A chamada para rolar para o topo foi removida
+  }, []);
 
   const handleShowModal = (project: Project) => {
     setSelectedProject(project);

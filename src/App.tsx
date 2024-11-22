@@ -8,6 +8,7 @@ import Footer from './components/Footer';
 import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   React.useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Navbar variant="dark" expand="lg" className="custom-navbar" fixed="top">
         <Container className="navbar-container">
           <Navbar.Brand as={Link} to="/" className="d-flex align-items-center navbar-left">
@@ -28,9 +30,9 @@ function App() {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="navbar-right">
-              <Nav.Link href="/#about">sobre mim</Nav.Link>
-              <Nav.Link href="/#contact">contato</Nav.Link>
-              <Nav.Link as={Link} to="/projetos">projetos</Nav.Link>
+              <Nav.Link as={Link} to="/#about">Sobre Mim</Nav.Link>
+              <Nav.Link as={Link} to="/#contact">Contato</Nav.Link>
+              <Nav.Link as={Link} to="/projetos">Projetos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
