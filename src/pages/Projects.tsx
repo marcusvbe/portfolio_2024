@@ -132,7 +132,7 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <div className="projects-container">
+    <div id="top" className="projects-container">
       <h2 className="projects-title">Projetos</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (

@@ -9,6 +9,7 @@ import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import ScrollToTop from './components/ScrollToTop';
+import { HashLink } from 'react-router-hash-link';
 
 function App() {
   React.useEffect(() => {
@@ -32,7 +33,7 @@ function App() {
             <Nav className="navbar-right">
               <Nav.Link as={Link} to="/#about">Sobre Mim</Nav.Link>
               <Nav.Link as={Link} to="/#contact">Contato</Nav.Link>
-              <Nav.Link as={Link} to="/projetos">Projetos</Nav.Link>
+              <Nav.Link as={HashLink} smooth to="/projetos#top">Projetos</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
