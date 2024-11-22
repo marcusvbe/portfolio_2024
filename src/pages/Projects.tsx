@@ -7,14 +7,16 @@ import { Modal, Button } from 'react-bootstrap';
 // Importar as imagens dos projetos
 import api_Chamados from '../assets/api_Chamados.png';
 import COVID_proj from '../assets/COVID_proj.png';
-import desafio_proj from '../assets/desafio_proj.png';
-import minhasSenhasApp from '../assets/screenshotMinhasSenhas2.png';
+import desafio_proj from '../assets/desafio_proj2.png';
+import minhasSenhasApp from '../assets/screenshotMinhasSenhas3.png';
 
 // import API_4 from '../assets/API_4.png';
 // import API_3 from '../assets/API_3.png';
 // import logo_port from '../assets/logo_port.jpg';
 // import { FaPython } from 'react-icons/fa';
 // Adicione mais imports de imagens conforme necessário
+
+
 
 interface Project {
   title: string;
