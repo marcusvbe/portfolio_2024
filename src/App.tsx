@@ -38,7 +38,7 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Container fluid className="mt-4 mb-5">
+      <Container fluid className="mt-4 mb-0">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projetos" element={<Projects />} />
