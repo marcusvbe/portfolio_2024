@@ -22,8 +22,9 @@
 .about-content {
   display: flex;
   gap: 4rem;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
+  margin-top: 2rem;
 }
 
 .about-text {
@@ -73,6 +74,8 @@
 
 .about-image-container {
   flex: 0 0 300px;
+  position: sticky;
+  top: 100px;
 }
 
 .about-image {
