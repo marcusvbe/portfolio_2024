@@ -20,13 +20,18 @@ const About: React.FC = () => {
                     </p>
                     <p>
                         Estou no 4º semestre do curso de Desenvolvimento de Software Multiplataforma na FATEC de São José dos Campos – SP. Minha experiência como tradutor aprimorou minha atenção aos detalhes, agilidade na pesquisa, criatividade para solucionar problemas dentro de restrições e excelentes habilidades de comunicação, todas essenciais na área de tecnologia.{'\n'}
+                        
                     </p>
                     <p>
                         Atualmente, busco oportunidades de estágio ou posição júnior em desenvolvimento de software, onde possa contribuir com meus conhecimentos técnicos, habilidades interpessoais e vontade de aprender. Estou pronto para participar de projetos inovadores e desafiadores que me permitam crescer continuamente e me tornar um desenvolvedor cada vez melhor.{'\n'}
                     </p>
-                    <HashLink smooth to="/projetos#top" className="projects-link">
-                        <FaProjectDiagram className="projects-icon" />
-                        Veja alguns dos meus projetos
+                    <p>
+                        Inglês: proficiência profissional (nível C1){'\n'}
+                        Certificado Cambridge English: Advanced (CAE)
+                    </p>
+                        <HashLink smooth to="/projetos#top" className="projects-link">
+                            <FaProjectDiagram className="projects-icon" />
+                            Veja alguns dos meus projetos
                     </HashLink>
                 </div>
                 <div className="about-image-container">
