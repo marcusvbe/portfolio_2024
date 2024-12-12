@@ -417,3 +417,11 @@
     font-family: var(--heading-font-family);
     font-weight: bold;
 }
+
+.project-details {
+    white-space: pre-line;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}

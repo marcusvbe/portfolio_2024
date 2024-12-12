@@ -69,10 +69,10 @@ const Projects: React.FC = () => {
       shortDescription: "Sistema para coleta e monitoramento de dados meteorológicos em tempo real – 2º semestre de 2024",
       modalTitle: "Sistema de Coleta de Dados de Estações Meteorológicas",
       image: API_4,
-      detalhes: `Os APIs (Aprendizagem por Projeto Integrado) são projetos semestrais em grupo desenvolvidos com a metodologia ágil SCRUM. A cada API são fornecidos requisitos funcionais e não funcionais, cabendo ao grupo a priorização (MVP), definição das entregas a cada sprint, sua validação com o cliente e a gestão da documentação.
-
-
+      detalhes: `Os APIs (Aprendizagem por Projeto Integrado) são projetos semestrais em grupo desenvolvidos com a metodologia ágil SCRUM. A cada API são fornecidos requisitos funcionais e não funcionais, cabendo ao grupo a priorização (MVP), definição das entregas a cada sprint, sua validação com o cliente e a gestão da documentação. 
+      
       No API deste semestre (disciplinas de DevOps e IoT), desenvolvemos um sistema para coletar dados de sensores (direção e velocidade do vento, índice pluviométrico, umidade, temperatura e pressão), tratá‑los e exibi‑los em um portal com dashboards e relatórios. 
+      
       Geração de alertas: ferramenta de monitoramento ambiental para lidar com desastres naturais. 
       Recurso didático: a demonstração dos conceitos matemáticos usados nos cálculos dos parâmetros. `,
       hardSkills: ["JWT: autenticação e autorização", "bcrypt: hashing de senhas", "Typescript, Node.js: backend", "Swagger: documentação de APIs", "AWS, Vercel: hospedagem e deploy automático", "Github Actions: pipeline de integração contínua", "React e Typescript: front‑end", "PostgreSQL, Neon: banco de dados relacional", "Redis: banco de dados em memória", "Metodologia Ágil SCRUM: gestão do projeto"],
